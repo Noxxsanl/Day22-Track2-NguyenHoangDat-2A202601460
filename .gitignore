@@ -26,5 +26,5 @@ env/
 # macOS
 .DS_Store
 
-# Lab outputs (không commit, chỉ nộp evidence/)
-data/ragas_report.json
+# data/ragas_report.json được commit có chủ đích: checklist trong rubric.md yêu cầu
+# file này tồn tại trong repo (không chứa thông tin nhạy cảm).

@@ -13,6 +13,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+# Console Windows mặc định dùng cp1252 → không in được emoji/tiếng Việt.
+# Phải ép UTF-8 ngay ở đây vì run_all.py in tiêu đề trước khi import các bước.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
 
 STEPS = {
     1: ("Bước 1: LangSmith RAG Pipeline",   "01_langsmith_rag_pipeline"),

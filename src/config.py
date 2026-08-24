@@ -5,8 +5,17 @@ Tải cấu hình từ file .env và thiết lập biến môi trường LangSmi
     config.py tự động set LANGCHAIN_* vào os.environ khi được import.
 """
 import os
+import sys
 from pathlib import Path
 from dotenv import load_dotenv
+
+# Console Windows mặc định dùng cp1252 → không in được emoji/tiếng Việt.
+# Ép stdout/stderr sang UTF-8 để log và file evidence hiển thị đúng.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
 
 # Tải .env từ thư mục gốc của project (Lab/)
 _root = Path(__file__).parent.parent
