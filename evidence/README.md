@@ -1,8 +1,20 @@
 # Bằng chứng — Day 22: LangSmith + Prompt Versioning
 
 **Sinh viên:** Nguyễn Hoàng Đạt — 2A202601460
-**LangSmith project:** `day22-lab` — tổng cộng **100 traces** (50 `rag-query` + 50 `ab-rag-query`)
 **Provider:** OpenAI (`gpt-4o-mini` + `text-embedding-3-small`)
+
+---
+
+## Link nộp bài
+
+| Mục | Link |
+|---|---|
+| **GitHub repository** | https://github.com/Noxxsanl/Day22-Track2-NguyenHoangDat-2A202601460 |
+| **LangSmith project** (`day22-lab`, 100 traces) | https://smith.langchain.com/o/805bc3d7-b7b2-4a13-a8db-508ecc9b7e90/projects/p/ac173cba-0d76-49ab-9eb0-34f3500002b4 |
+| Prompt Hub — V1 | https://smith.langchain.com/prompts/nguyenhoangdat-rag-v1 |
+| Prompt Hub — V2 | https://smith.langchain.com/prompts/nguyenhoangdat-rag-v2 |
+
+> Kiểm tra trước khi nộp: repo để **public**, LangSmith project chia sẻ được cho người chấm.
 
 ---
 

@@ -42,7 +42,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn đã có:
 ## Cài đặt môi trường
 
 ### 1. Cài thư viện
-
+P
 ```bash
 pip install -r requirements.txt
 ```
